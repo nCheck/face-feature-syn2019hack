@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/animate.css">
+    
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/public/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/public/css/aos.css">
+
+    <link rel="stylesheet" href="/public/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/public/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/public/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="/public/css/flaticon.css">
+    <link rel="stylesheet" href="/public/css/icomoon.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+    <!-- <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text x` justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+              <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Enter The Input</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+     -->
+      
+    
+     
+     <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Face Predictions</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row no-gutters justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+      
+            <h2 class="mb-4">Enter your Details</h2>
+      
+          </div>
+        </div>
+
+
+        <div class="row no-gutters justify-content-center  pb-5">
+          <div class="col-md-6 text-center heading-section ftco-animate">
+
+            <div class="row no-gutters justify-content-center ">
+            
+              <label class="switch">
+                <input type="checkbox" id="genderCheck" checked>
+                <span class="slider round"></span>
+              </label>
+            
+              <h2 class="ml-5" id="genderID" >MALE</h2>
+
+            </div> 
+
+            <div class="row no-gutters justify-content-center ">
+              <img id="imgID" src="/public/face.gif" height="620px" width="" alt="Smiley face">
+            </div>  
+
+          </div>
+          
+<!------------------------------------------------------------------------------------------------------------>
+
+
+
+<!------------------------------------------------------------------------------------------------------------>
+             
+        <div class="col-md-6 text-center heading-section ftco-animate">
+
+          <div class="row no-gutters justify-content-center ">
+            <h3 class="ml-5" >Hair Type</h3>
+          </div>
+
+          <div class="row no-gutters justify-content-center ">
+            <div class="col-md-4 text-center heading-section ftco-animate">
+              <div class="checkbox">
+                <label class="fontSize"><input type="checkbox" id="Receding_Hairline">Receding Hairline</label>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-center heading-section ftco-animate">
+              <div class="checkbox" >
+                <label class="fontSize" ><input  type="checkbox" id="Bald">Bald</label>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 text-center heading-section ftco-animate">
+                <div class="checkbox">
+                  <label class="fontSize" ><input type="checkbox" id="Bangs">Bangs</label>
+                </div>
+              </div>
+
+          </div>  
+
+          <div class="row no-gutters justify-content-center ">
+            <div class="col-md-4 text-center heading-section ftco-animate">
+              <div class="checkbox" >
+                <label class="fontSize"><input type="checkbox" id="Black_Hair">Black Hair</label>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-center heading-section ftco-animate">
+              <div class="checkbox" >
+                <label class="fontSize" ><input type="checkbox" id="Brown_Hair">Brown Hair</label>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 text-center heading-section ftco-animate">
+                <div class="checkbox">
+                  <label class="fontSize" ><input type="checkbox" id="Gray_Hair">Gray Hair</label>
+                </div>
+              </div>
+          </div>  
+
+          <div class="row no-gutters justify-content-center ">
+              <div class="col-md-4 text-center heading-section ftco-animate">
+                <div class="checkbox" >
+                  <label class="fontSize"><input type="checkbox" id="Blond_Hair">Blond Hair</label>
+                </div>
+              </div>
+  
+              <div class="col-md-4 text-center heading-section ftco-animate">
+                <div class="checkbox" >
+                  <label class="fontSize" ><input type="checkbox" id="Straight_Hair">Straight Hair</label>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-4 text-center heading-section ftco-animate">
+                  <div class="checkbox" >
+                    <label class="fontSize" ><input type="checkbox" id="Wavy_Hair">Wavy Hair</label>
+                  </div>
+                </div>
+  
+  
+            </div>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+            <div class="row no-gutters justify-content-center ">
+                <h3 class="ml-5" >Eye/Ear Type</h3>
+              </div>
+    
+              <div class="row no-gutters justify-content-center ">
+                <div class="col-md-6 text-center heading-section ftco-animate">
+                  <div class="checkbox">
+                    <label class="fontSize"><input type="checkbox" id="Arched_Eyebrows">Arched_Eyebrows</label>
+                  </div>
+                </div>
+    
+                <div class="col-md-6 text-center heading-section ftco-animate">
+                  <div class="checkbox">
+                    <label class="fontSize" ><input type="checkbox" id="Wearing_Earrings">Wearing_Earrings</label>
+                  </div>
+                </div>
+        
+              </div>  
+    
+              <div class="row no-gutters justify-content-center ">
+                <div class="col-md-6 text-center heading-section ftco-animate">
+                  <div class="checkbox">
+                    <label class="fontSize"><input type="checkbox" id="Bags_Under_Eyes">Bags_Under_Eyes</label>
+                  </div>
+                </div>
+    
+                <div class="col-md-6 text-center heading-section ftco-animate">
+                  <div class="checkbox">
+                    <label class="fontSize" ><input type="checkbox" id="Bushy_Eyebrows">Bushy_Eyebrows</label>
+                  </div>
+                </div>
+    
+              </div>  
+    
+              <div class="row no-gutters justify-content-center ">
+                  <div class="col-md-6 text-center heading-section ftco-animate">
+                    <div class="checkbox">
+                      <label class="fontSize"><input type="checkbox" id="Narrow_Eyes">Narrow_Eyes</label>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6 text-center heading-section ftco-animate">
+                    <div class="checkbox">
+                      <label class="fontSize" ><input type="checkbox" id="High_Cheekbones">High_Cheekbones</label>
+                    </div>
+                  </div>
+      
+              </div>
+    
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+    <div class="row no-gutters justify-content-center ">
+      <h3 class="ml-5" >Center Face Atrribute</h3>
+    </div>
+
+    <div class="row no-gutters justify-content-center ">
+      <div class="col-md-4 text-center heading-section ftco-animate">
+        <div class="checkbox">
+          <label class="fontSize"><input type="checkbox" id="Rosy_Cheeks">Rosy_Cheeks</label>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center heading-section ftco-animate">
+        <div class="checkbox">
+          <label class="fontSize" ><input type="checkbox" id="Big_Lips">Big_Lips</label>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 text-center heading-section ftco-animate">
+          <div class="checkbox">
+            <label class="fontSize" ><input type="checkbox" id="Pointy_Nose">Pointy_Nose</label>
+          </div>
+        </div>
+
+    </div>  
+
+    <div class="row no-gutters justify-content-center ">
+      <div class="col-md-4 text-center heading-section ftco-animate">
+        <div class="checkbox">
+          <label class="fontSize"><input type="checkbox" id="Sideburns">Sideburns</label>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center heading-section ftco-animate">
+        <div class="checkbox">
+          <label class="fontSize" ><input type="checkbox" id="Big_Nose">Big_Nose</label>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 text-center heading-section ftco-animate">
+          <div class="checkbox">
+            <label class="fontSize" ><input type="checkbox" id="Chubby">Chubby</label>
+          </div>
+        </div>
+    </div>  
+
+    <div class="row no-gutters justify-content-center ">
+        <div class="col-md-4 text-center heading-section ftco-animate">
+          <div class="checkbox">
+            <label class="fontSize"><input type="checkbox" id="Goatee">Goatee</label>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center heading-section ftco-animate">
+          <div class="checkbox">
+            <label class="fontSize" ><input type="checkbox" id="Double_Chin">Double_Chin</label>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 text-center heading-section ftco-animate">
+            <div class="checkbox">
+              <label class="fontSize" ><input type="checkbox" id="Mustache">Mustache</label>
+            </div>
+          </div>
+
+
+      </div>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+
+<div class="row no-gutters justify-content-center ">
+    <h3 class="ml-5" >Other Atrribute</h3>
+  </div>
+
+  <div class="row no-gutters justify-content-center ">
+    <div class="col-md-4 text-center heading-section ftco-animate">
+      <div class="checkbox">
+        <label class="fontSize"><input type="checkbox" id="Smiling">Smiling</label>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-center heading-section ftco-animate">
+      <div class="checkbox">
+        <label class="fontSize" ><input type="checkbox" id="Mouth_Slightly_Open">Mouth Open</label>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 text-center heading-section ftco-animate">
+        <div class="checkbox">
+          <label class="fontSize" ><input type="checkbox" id="Young">Young</label>
+        </div>
+      </div>
+  </div>  
+
+  <div class="row no-gutters justify-content-center ">
+      <div class="col-md-3 text-center heading-section ftco-animate">
+        <div class="checkbox">
+          <label class="fontSize"><input type="checkbox" id="Pale_Skin">Pale</label>
+        </div>
+      </div>
+
+      <div class="col-md-3 text-center heading-section ftco-animate">
+        <div class="checkbox">
+          <label class="fontSize" ><input type="checkbox" id="No_Beard">No Beard</label>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 text-center heading-section ftco-animate">
+          <div class="checkbox">
+            <label class="fontSize" ><input type="checkbox" id="Attractive">Attractive</label>
+          </div>
+        </div>
+
+      <div class="col-md-3 text-center heading-section ftco-animate">
+          <div class="checkbox">
+            <label class="fontSize" ><input type="checkbox" id="Oval_Face">Oval</label>
+          </div>
+        </div>  
+
+
+    </div>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+  </div>
+          
+  
+
+
+<!------------------------------------------------------------------------------------------------------------>
+        
+        
+
+        <div class="row no-gutters justify-content-center mt-5">
+
+          <div class="col-md-12 text-center heading-section ftco-animate">  
+            <div class="form-group" style="width: 100%">
+                <input id="nlp" class="form-control ml-5" placeholder="Enter The Text" name="name" value="" required style="border-radius:5px;">
+            </div>
+          </div>
+
+          <div class="col-md-12 text-center heading-section ftco-animate">
+            <button onclick="myFunction()" id="bbutton" type="submit" name="submit" class="btn btn-primary" style="align:center;" >Submit</button>
+          </div>          
+        </div>
+    
+                                                      
+      </div>
+            
+      </div>
+    </div>
+
+    <div id="hidden-form">
+      
+    </div>
+
+
+
+
+  <script src="/public/js/jquery.min.js"></script>
+  <script src="/public/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/public/js/popper.min.js"></script>
+  <script src="/public/js/bootstrap.min.js"></script>
+  <script src="/public/js/jquery.easing.1.3.js"></script>
+  <script src="/public/js/jquery.waypoints.min.js"></script>
+  <script src="/public/js/jquery.stellar.min.js"></script>
+  <script src="/public/js/owl.carousel.min.js"></script>
+  <script src="/public/js/jquery.magnific-popup.min.js"></script>
+  <script src="/public/js/aos.js"></script>
+  <script src="/public/js/jquery.animateNumber.min.js"></script>
+  <script src="/public/js/bootstrap-datepicker.js"></script>
+  <script src="/public/js/particles.min.js"></script>
+  <script src="/public/js/particle.js"></script>
+  <script src="/public/js/scrollax.min.js"></script>
+  <script src="/public/js/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- <script  src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> -->
+
+
+  <script >
+    $('#genderCheck').change(function() {
+        if(this.checked) {
+          $('#imgID').attr("src", "/public/face.gif");
+          $("#genderID").html("MALE");
+          // genderID.innerText = "MALE";
+
+          console.log('checked')
+        }
+        else{
+          $('#imgID').attr("src", "/public/female.gif");
+          $("#genderID").html("FEMALE ");
+          // genderID.innerText = "FEMALE";
+
+          console.log('not')
+        }        
+    });
+
+
+  function myFunction() {
+
+    good_attr = ['Arched_Eyebrows', 'Attractive', 'Bags_Under_Eyes',
+       'Bald', 'Bangs', 'Big_Lips', 'Big_Nose', 'Black_Hair', 'Blond_Hair',
+       'Blurry', 'Brown_Hair', 'Bushy_Eyebrows', 'Chubby', 'Double_Chin', 'Goatee', 'Gray_Hair', 'High_Cheekbones',
+       'Male', 'Mouth_Slightly_Open', 'Mustache', 'Narrow_Eyes', 'No_Beard',
+       'Oval_Face', 'Pale_Skin', 'Pointy_Nose', 'Receding_Hairline',
+       'Rosy_Cheeks', 'Sideburns', 'Smiling', 'Straight_Hair', 'Wavy_Hair',
+       'Wearing_Earrings', 'Young']
+
+    upload = {}   
+
+    attrDict = {'Arched_Eyebrows':0, 'Attractive':0, 'Bags_Under_Eyes':0,
+       'Bald':0, 'Bangs':0, 'Big_Lips':0, 'Big_Nose':0, 'Black_Hair':0, 'Blond_Hair':0,
+       'Brown_Hair':0, 'Bushy_Eyebrows':0, 'Chubby':0, 'Double_Chin':0, 'Goatee':0, 'Gray_Hair':0, 
+       'High_Cheekbones':0,'Mouth_Slightly_Open':0, 'Mustache':0, 'Narrow_Eyes':0, 'No_Beard':0,
+       'Oval_Face':0, 'Pale_Skin':0, 'Pointy_Nose':0, 'Receding_Hairline':0,
+       'Rosy_Cheeks':0, 'Sideburns':0, 'Smiling':0, 'Straight_Hair':0, 'Wavy_Hair':0,
+       'Wearing_Earrings':0, 'Young':0}
+   
+
+    for(i=0 ; i<good_attr.length ; i++ ){
+      val = '#'+good_attr[i]
+      // console.log(val)
+
+      // console.log($('#Bald').is(":checked"))
+
+      if($(val).is(":checked")){
+          attrDict[good_attr[i]] = 1
+          upload[good_attr[i]] = 1
+      } 
+    }  
+    
+    if($('#genderCheck').is(":checked")){
+        attrDict['Male'] = 1
+        upload['Male'] = 1
+    }
+    else{
+        attrDict['Male'] = 0
+        upload['Male'] = 0
+    }
+
+    var inputTags = "";
+
+    for (var u in upload){
+      let temp = ` <input name="${u}" value=${upload[u]} ></input> `;
+      inputTags += temp
+    }
+    var formstart = " <form action='/api/predict' method='post'> ";
+    var formend = " <button type='submit' id='submitbtn'> submit </button>  </form> "
+    var query = $('#nlp').val();
+    console.log("value", query);
+    var inputTxt = ` <input name="nlp" type="text" value=${query} ></input> `;
+    var fullform = formstart + inputTags + inputTxt + formend;
+
+    console.log(fullform)
+
+    $('#hidden-form').append( fullform );
+    $('#submitbtn').trigger('click');
+    
+  // var url =  '/api/predict'
+  // $.ajax({
+  //         type: "POST",
+  //         url: url,
+  //         data: upload,
+  //         success: function(data)
+  //         {
+  //             console.log(data)
+
+  //         }
+  //       });
+
+
+
+
+    console.log(upload)
+  }
+  </script>
+
+
+</body>
+</html>

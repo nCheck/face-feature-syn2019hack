@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/animate.css">
+    
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/public/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/public/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/public/css/aos.css">
+
+    <link rel="stylesheet" href="/public/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/public/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/public/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="/public/css/flaticon.css">
+    <link rel="stylesheet" href="/public/css/icomoon.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <style>
+    
+    body {
+  background: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 20px;
+}
+h1 small {
+  display: block;
+  font-size: 15px;
+  padding-top: 8px;
+  color: gray;
+}
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 50px auto;
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid rgb(102, 100, 238);
+  border-color: rgb(102, 100, 238) transparent rgb(102, 100, 238) transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: "FontAwesome";
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+    
+    </style>
+<script src="/public/js/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
+
+  </head>
+  <body>
+
+          
+
+    <div class="container" style="border:2px solid rgb(39, 29, 29)">
+      <h1>Enter The Image To Be Uploaded 
+      </h1>
+      <div class="avatar-upload">
+          <div class="avatar-edit">
+              <input type='file' name="file" id="imageUpload" accept=".png, .jpg, .jpeg" />
+              <label for="imageUpload"></label>
+          </div>
+          <div class="avatar-preview">
+              <div id="imagePreview" style="background-image: url(https://icon-library.net/images/add-person-icon/add-person-icon-26.jpg);">
+              </div>
+          </div>
+  
+      </div>
+  
+      <div style="margin-left: 300px">
+          <label for="gender">Select Gender</label>
+        <select name="gender" style="margin-left: 5%" id="gender">
+          <option value=1>Male</option>
+          <option value=0>Female</option>
+        </select> 
+        <input type="text" class="form-control form-rounded" id="file_name"  style="text-align: center; border-radius: 1rem; width: 300px" placeholder="Enter the name">
+      </div>
+    
+      <div style="margin-left: 300px ; margin-top: 15px">
+          <button id="mySubmit" type="button" style="width: 300px ; height: 55px;"   class="btn"> Upload</button>
+  
+      </div>
+  
+      <div id="prediction" style="align-content: center; text-align: center">
+          <div class="lds-hourglass"></div>
+      </div>
+  
+  </div>
+
+
+
+    
+
+
+
+
+  
+  <script src="/public/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/public/js/popper.min.js"></script>
+  <script src="/public/js/bootstrap.min.js"></script>
+  <script src="/public/js/jquery.easing.1.3.js"></script>
+  <script src="/public/js/jquery.waypoints.min.js"></script>
+  <script src="/public/js/jquery.stellar.min.js"></script>
+  <script src="/public/js/owl.carousel.min.js"></script>
+  <script src="/public/js/jquery.magnific-popup.min.js"></script>
+  <script src="/public/js/aos.js"></script>
+  <script src="/public/js/jquery.animateNumber.min.js"></script>
+  <script src="/public/js/bootstrap-datepicker.js"></script>
+  <script src="/public/js/particles.min.js"></script>
+  <script src="/public/js/particle.js"></script>
+  <script src="/public/js/scrollax.min.js"></script>
+  <script src="/public/js/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+  <!-- <script  src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> -->
+
+
+  <script >
+
+    $('.lds-hourglass').hide();
+
+      var glo_file = ""
+      function readURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function(e) {
+                  $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                  $('#imagePreview').hide();
+                  $('#imagePreview').fadeIn(650);
+              }
+              glo_file = input.files[0];
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+      $("#imageUpload").change(function() {
+          readURL(this);
+      });
+
+
+      $('#mySubmit').click( (e)=>{
+
+        $('.lds-hourglass').show();
+
+        var fd = new FormData();
+        let file_name = $('#file_name').val();
+        let gender = $('#gender').val()
+        fd.append('file_name' , file_name);   
+        fd.append('gender' , parseInt(gender));    
+        fd.append( 'file', $('#imageUpload')[0].files[0] );
+
+        $.ajax({
+            url: 'http://localhost:9966/api/upload',
+            type: 'POST',
+            method: 'POST',
+            dataType: 'json',
+            data: fd,
+            success: function (resp) {
+                var data = resp.data;
+                var pred_div = $('#prediction');
+                var feature = 'Features: ' + '<br>';
+                for( let d of data ){
+
+                  if ( feature != 'Features: ' + '<br>' )
+                    feature +=  ' ,' + d;
+                  else{
+                    feature +=  d;
+                  }
+
+                }
+                feature = "<h4>" + feature + "</h4>";
+                $('.lds-hourglass').hide();
+                pred_div.append(feature);
+
+
+                console.log('from success and data: ', data)
+            },
+            error   : function (err) {
+                console.log(err)
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+
+        
+      } )
+
+
+      
+  </script>
+
+
+</body>
+</html>
